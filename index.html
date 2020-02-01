@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel='icon' href='media/portfolio_icon.png' />
+  <link rel='stylesheet' type='text/css' href='stylesheet.css' />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/61a0798a0c.js" crossorigin="anonymous"></script>
+  <script src='scripts.js'></script>
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <div class='header-text'>
+      <i class="fas fa-book-open"></i>
+      Mahfuzul Haque
+    </div>
+    <nav class='desktop-nav'>
+      <a href='#'>Skills</a>
+      <a href='#'>Experience</a>
+      <a href='#'>Projects</a>
+      <a href='#'>Education</a>
+    </nav>
+    <div class='menu-icon' onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    <nav class='mobile-nav' onclick="toggleMenu()">
+      <a href='#'>Skills</a>
+      <a href='#'>Experience</a>
+      <a href='#'>Projects</a>
+      <a href='#'>Education</a>
+    </nav>
+  </header>
+  <div class='intro'>
+    <div class='self-img'>
+      <img
+        src='https://media-exp1.licdn.com/dms/image/C4E03AQE3LKKTR5adFA/profile-displayphoto-shrink_200_200/0?e=1585785600&v=beta&t=QPlZwhZOS9eqVDkAjGJTQCa8CW_OyWWnw2K3uqhp5OU'
+        alt='Self Portrait' />
+    </div>
+    <div style='margin: 20px'></div>
+    <div class='intro-text'>
+      Hello there, visitor! My name is Mahfuzul Haque and I am an aspiring full stack web developer. I currently hold a
+      Bachelor's degree in software engineering from the University of Michigan. Additionally, I have several years of
+      professional expertise
+      in both front-end and back-end web development, as well as a number of individual/work/school projects that I've
+      worked on which leverages
+      industry standard technology and features code that's highly scalable, maintainable, and efficient.
+    </div>
+  </div>
+  <main>
+    <article>
+      <h1><i class="fas fa-code-branch"></i>&nbsp;&nbsp;Skills</h1>
+      <hr />
+      The following is an overview of my current skillset. Most of the projects I've showcased contain implementations of all that
+      are listed.<br /><br />
+      <table id='skills-table' style='margin: auto'>
+        <tbody>
+          <tr>
+            <th>High Level Languages:</th>
+            <td>C++, C#, Java</td>
+          </tr>
+          <tr>
+            <th>Front End Web:</th>
+            <td>HTML, CSS, JavaScript, ReactJS, ReduxJS</td>
+          </tr>
+          <tr>
+            <th>Back End Web:</th>
+            <td>.NET Core, NodeJS, ExpressJS</td>
+          </tr>
+          <tr>
+            <th>Database:</th>
+            <td>SQL Server, MySQL, MongoDB, Azure Cosmos NoSQL</td>
+          </tr>
+          <tr>
+            <th>Version Control:</th>
+            <td>GitHub, BitBucket</td>
+          </tr>
+          <tr>
+            <th>Hosting:</th>
+            <td>Azure, Heroku, Amazon, Google</td>
+          </tr>
+          <tr>
+            <th>Other:</th>
+            <td>OAuth/OpenID/JWT, Sockets, WinForms, SceneBuilder, Razor Pages</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+  </main>
+</body>
+
+</html>

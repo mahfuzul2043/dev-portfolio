@@ -1,0 +1,112 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #212121;
+  color: white;
+}
+
+.header-text {
+  flex: 1;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.desktop-nav {
+  display: flex;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.desktop-nav a, .mobile-nav a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.desktop-nav a:hover, .mobile-nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 15px;
+}
+
+.intro {
+  background-color: #424242;
+  color: white; 
+  padding: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.self-img img {
+  border-radius: 50%;
+  width: 200px;
+  border: 1px solid white;
+}
+
+article {
+  padding: 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  text-align: center;
+}
+
+.menu-icon {
+  margin-right: 15px;
+  display: none;
+}
+
+#skills-table td {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 630px) {
+  header {
+    position: relative;
+  }
+
+  .intro {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    flex-direction: column;
+    position: absolute;
+    bottom: -194.67px;
+    background-color: #212121;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .mobile-nav a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+    padding: 15px;
+    cursor: pointer;
+  }
+}
