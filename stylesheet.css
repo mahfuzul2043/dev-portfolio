@@ -28,6 +28,13 @@ header {
 
 .mobile-nav {
   display: none;
+  flex-direction: column;
+  position: absolute;
+  bottom: -194.67px;
+  background-color: #212121;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
 }
 
 .desktop-nav a, .mobile-nav a {
@@ -100,16 +107,6 @@ article {
 
   .desktop-nav {
     display: none;
-  }
-
-  .mobile-nav {
-    flex-direction: column;
-    position: absolute;
-    bottom: -194.67px;
-    background-color: #212121;
-    width: 100%;
-    align-items: center;
-    overflow: hidden;
   }
 
   .mobile-nav a {
