@@ -17,15 +17,15 @@
       Mahfuzul Haque
     </div>
     <nav class='desktop-nav'>
-      <a href='#'>Skills</a>
-      <a href='#'>Experience</a>
+      <a href='#skills'>Skills</a>
+      <a href='#experience'>Experience</a>
       <a href='#'>Projects</a>
       <a href='#'>Education</a>
     </nav>
     <div class='menu-icon' onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
     <nav class='mobile-nav' onclick="toggleMenu()">
-      <a href='#'>Skills</a>
-      <a href='#'>Experience</a>
+      <a href='#skills'>Skills</a>
+      <a href='#experience'>Experience</a>
       <a href='#'>Projects</a>
       <a href='#'>Education</a>
     </nav>
@@ -47,12 +47,10 @@
     </div>
   </div>
   <main>
-    <article>
+    <article id='skills'>
       <h1><i class="fas fa-code-branch"></i>&nbsp;&nbsp;Skills</h1>
       <hr />
-      The following is an overview of my current skillset. Most of the projects I've showcased contain implementations of all that
-      are listed.<br /><br />
-      <table id='skills-table' style='margin: auto'>
+      <table id='skills-table' style='margin: auto; text-align: left'>
         <tbody>
           <tr>
             <th>High Level Languages:</th>
@@ -80,10 +78,68 @@
           </tr>
           <tr>
             <th>Other:</th>
-            <td>OAuth/OpenID/JWT, Sockets, WinForms, SceneBuilder, Razor Pages</td>
+            <td>OAuth/OpenID/JWT, Sockets, WinForms, SceneBuilder, Razor Pages, Responsive Web Design</td>
           </tr>
         </tbody>
       </table>
+    </article>
+    <br />
+    <article id='experience'>
+      <h1><i class="fas fa-briefcase"></i>&nbsp;&nbsp;Experience</h1>
+      <hr />
+      <div class='job-wrapper'>
+        <div class='job-content'>
+          <img src='media/dslogo.png' alt='Darena Solutions Logo' height="48px" />
+          <div style='margin: 10px'></div>
+          <div class='job-text'>
+            <b>Software Developer</b><br />
+            Darena Solutions<br />
+            <span style='color: grey'>April 2018 - Present<br /><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;St
+              Louis,
+              MO.</span>
+            <hr />
+            <ul>
+              <li>Working extensively with react/redux and google's material UI framework to design and maintain web
+                applications</li>
+              <li>Working with .NET Core to develop and maintain APIs that serve as the backend for web applications
+              </li>
+              <li>Managing builds and deployments for web applications and APIs to an Azure hosting environment</li>
+              <li>Gathering requirements and working closely with clientele and peers to ensure product specifications
+                are
+                satisfied</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class='job-wrapper'>
+        <div class='job-content'>
+          <img src='media/nemologo.png' alt='Nemo Health Logo' height="48px" />
+          <div style='margin: 10px'></div>
+          <div class='job-text'>
+            <b>Software Developer/IT Internship</b><br />
+            NEMO Health<br />
+            <span style='color: grey'>May 2017 - September 2017<br /><i
+                class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Southfield, MI.</span>
+            <hr />
+            In this internship, I had the opportunity to work in both the IT and software development departments. For
+            IT, I worked on:
+            <ul>
+              <li>General help desk support and computer troubleshooting assistance for employees via Spiceworks</li>
+              <li>Setting up employees with workstations, formatting, recycling, and cleaning machines and other
+                computer hardware</li>
+              <li>Using Active Directory to create and manage users and their permissions within the organization</li>
+              <li>Managed and lead the company’s inventory management system as my final internship project</li>
+            </ul>
+            For software develoment, I worked on:
+            <ul>
+              <li>Introducing new features to NEMO's web application using Angular.js</li>
+              <li>Addressing changes, enhancements, and bugs posted on Jira</li>
+              <li>Optimizing legacy code used in NEMO's desktop application (TRAKnet)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </article>
   </main>
 </body>
