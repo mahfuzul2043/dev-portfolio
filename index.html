@@ -19,15 +19,15 @@
     <nav class='desktop-nav'>
       <a href='#skills'>Skills</a>
       <a href='#experience'>Experience</a>
-      <a href='#'>Projects</a>
-      <a href='#'>Education</a>
+      <a href='#projects'>Projects</a>
+      <a href='#education'>Education</a>
     </nav>
     <i class="fas fa-bars menu-icon" onclick='toggleMenu()'></i>
     <nav class='mobile-nav' onclick="toggleMenu()">
       <a href='#skills'>Skills</a>
       <a href='#experience'>Experience</a>
-      <a href='#'>Projects</a>
-      <a href='#'>Education</a>
+      <a href='#projects'>Projects</a>
+      <a href='#education'>Education</a>
     </nav>
   </header>
   <div class='intro'>
@@ -47,48 +47,52 @@
     </div>
   </div>
   <main>
-    <article id='skills'>
+    <article id='skills' class='card'>
       <h1><i class="fas fa-code-branch"></i>&nbsp;&nbsp;Skills</h1>
       <hr />
-      <table id='skills-table' style='margin: auto; text-align: left'>
-        <tbody>
-          <tr>
-            <th>High Level Languages:</th>
-            <td>C++, C#, Java</td>
-          </tr>
-          <tr>
-            <th>Front End Web:</th>
-            <td>HTML, CSS, JavaScript, ReactJS, ReduxJS</td>
-          </tr>
-          <tr>
-            <th>Back End Web:</th>
-            <td>.NET Core, NodeJS, ExpressJS</td>
-          </tr>
-          <tr>
-            <th>Database:</th>
-            <td>SQL Server, MySQL, MongoDB, Azure Cosmos NoSQL</td>
-          </tr>
-          <tr>
-            <th>Version Control:</th>
-            <td>GitHub, BitBucket</td>
-          </tr>
-          <tr>
-            <th>Hosting:</th>
-            <td>Azure, Heroku, Amazon, Google</td>
-          </tr>
-          <tr>
-            <th>Other:</th>
-            <td>OAuth/OpenID/JWT, Sockets, WinForms, SceneBuilder, Razor Pages, Responsive Web Design</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class='center-content'>
+        <div class='card' style='width: 900px;'>
+          <table id='skills-table' style='text-align: left;'>
+            <tbody>
+              <tr>
+                <th>High Level Languages:</th>
+                <td>C++, C#, Java</td>
+              </tr>
+              <tr>
+                <th>Front End Web:</th>
+                <td>HTML, CSS, JavaScript, ReactJS, ReduxJS</td>
+              </tr>
+              <tr>
+                <th>Back End Web:</th>
+                <td>.NET Core, NodeJS, ExpressJS</td>
+              </tr>
+              <tr>
+                <th>Database:</th>
+                <td>SQL Server, MySQL, MongoDB, Azure Cosmos NoSQL</td>
+              </tr>
+              <tr>
+                <th>Version Control:</th>
+                <td>GitHub, BitBucket</td>
+              </tr>
+              <tr>
+                <th>Hosting:</th>
+                <td>Azure, Heroku, Amazon, Google</td>
+              </tr>
+              <tr>
+                <th>Other:</th>
+                <td>OAuth/OpenID/JWT, Sockets, WinForms, SceneBuilder, Razor Pages, Responsive Web Design</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </article>
     <br />
-    <article id='experience'>
+    <article id='experience' class='card'>
       <h1><i class="fas fa-briefcase"></i>&nbsp;&nbsp;Experience</h1>
       <hr />
-      <div class='job-wrapper'>
-        <div class='job-content'>
+      <div class='center-content'>
+        <div class='job-content card'>
           <img src='media/dslogo.png' alt='Darena Solutions Logo' height="48px" />
           <div style='margin: 10px'></div>
           <div class='job-text'>
@@ -112,8 +116,8 @@
         </div>
       </div>
       <br />
-      <div class='job-wrapper'>
-        <div class='job-content'>
+      <div class='center-content'>
+        <div class='job-content card'>
           <img src='media/nemologo.png' alt='Nemo Health Logo' height="48px" />
           <div style='margin: 10px'></div>
           <div class='job-text'>
@@ -137,6 +141,51 @@
               <li>Addressing changes, enhancements, and bugs posted on Jira</li>
               <li>Optimizing legacy code used in NEMO's desktop application (TRAKnet)</li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+    <br />
+    <article id='projects' class='card'>
+      <h1><i class="fas fa-project-diagram"></i>&nbsp;&nbsp;Projects</h1>
+      <hr />
+    </article>
+    <br />
+    <article id='education' class='card'>
+      <h1><i class="fas fa-school"></i>&nbsp;&nbsp;Education</h1>
+      <hr />
+      <div class='center-content'>
+        <div class='job-content card'>
+          <img src='media/umdlogo.png' alt='Nemo Health Logo' height="48px" />
+          <div style='margin: 10px'></div>
+          <div class='job-text'>
+            <b>University of Michigan</b><br />
+            Bachelor of Science - BS, Computer Software Engineering, GPA: 3.64<br />
+            <span style='color: grey'>2016-2020</span>
+            <hr />
+            <div style='display: flex; flex-wrap: wrap;'>
+              <div>
+                Relevant Coursework:
+                <ul>
+                  <li>CIS 150 - Computer Science I</li>
+                  <li>CIS 200 - Computer Science II</li>
+                  <li>CIS 476 - Software Design Patterns</li>
+                  <li>CIS 350 - Data Structures and Algorithm Analysis</li>
+                  <li>CIS 435 - Web Technology</li>
+                  <li>CIS 421 - Database Management Systems</li>
+                  <li>CIS 450 - Operating Systems</li>
+                  <li>CIS 496 - Senior Design</li>
+                </ul>
+              </div>
+              <div>
+                Achievements/Extracurricular:
+                <ul>
+                  <li>Dean's List</li>
+                  <li>Graduation with High Distinction</li>
+                  <li>Honor's Society</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -66,9 +66,12 @@ main {
   border: 1px solid white;
 }
 
-article {
-  padding: 15px;
+.card {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding: 15px;
+}
+
+article {
   text-align: center;
 }
 
@@ -81,7 +84,7 @@ article {
   padding: 10px;
 }
 
-.job-wrapper {
+.center-content {
   display: flex;
   justify-content: center;
 }
@@ -89,9 +92,11 @@ article {
 .job-content {
   display: flex;
   text-align: left;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  padding: 15px;
   width: 900px;
+}
+
+.job-text {
+  flex: 1;
 }
 
 @media only screen and (max-width: 630px) {
