@@ -102,6 +102,44 @@ article {
   flex: 1;
 }
 
+.fa-info-circle:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+.chip {
+  display: inline;
+  white-space: nowrap;
+  padding: 10px;
+  margin: 5px;
+  background-color: grey;
+  color: white;
+  font-size: 13px;
+}
+
+.tech-chips {
+  display: flex; 
+  overflow: auto;
+  -ms-overflow-style: none;
+}
+
+.tech-chips::-webkit-scrollbar {
+  display: none;
+}
+
+.project-content {
+  width: 300px; 
+  margin: 5px; 
+  text-align: left; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between;
+}
+
 @media only screen and (max-width: 630px) {
   header {
     position: relative;
