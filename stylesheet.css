@@ -102,7 +102,7 @@ article {
   flex: 1;
 }
 
-.fa-images:hover {
+.fa-images:hover, .fa-github:hover {
   color: grey;
   cursor: pointer;
 }
@@ -138,6 +138,12 @@ hr {
   display: flex; 
   flex-direction: column; 
   justify-content: space-between;
+}
+
+.icon-link {
+  color: white;
+  text-decoration: none;
+  border: none;
 }
 
 @media only screen and (max-width: 630px) {
@@ -278,4 +284,34 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
