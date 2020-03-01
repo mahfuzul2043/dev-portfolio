@@ -146,21 +146,13 @@
     <br />
     <article id='projects' class='card'>
       <h1><i class="fas fa-project-diagram"></i>&nbsp;&nbsp;Projects</h1>
-      <div style='display: flex; justify-content: center; align-items: center;'>
-        <input type='radio' name='category' value='school' checked /> School
-        <div style='margin: 5px'></div>
-        <input type='radio' name='category' value='work' /> Work
-        <div style='margin: 5px'></div>
-        <input type='radio' name='category' value='personal' /> Personal
-      </div>
-      <br />
       <div style='display: flex; justify-content: center'>
         <div style='display: flex; justify-content: center; flex-wrap: wrap; max-width: 1050px; align-items: stretch;'>
           <div class='card project-content'>
             <div>
               <div style='display: flex; justify-content: space-between; align-items: center;'>
                 <span style='font-size: 23px; font-weight: bold;'>HireUp</span>
-                <i class="fas fa-info-circle" style='font-size: 23px;'></i>
+                <i class="fas fa-images" style='font-size: 23px' onclick="openSlideshow('HireUp')"></i>
               </div>
               <hr />
             </div>
@@ -182,7 +174,7 @@
             <div>
               <div style='display: flex; justify-content: space-between; align-items: center;'>
                 <span style='font-size: 23px; font-weight: bold;'>Covershiftz</span>
-                <i class="fas fa-info-circle" style='font-size: 23px;'></i>
+                <i class="fas fa-images" style='font-size: 23px' onclick="openSlideshow('Covershiftz')"></i>
               </div>
               <hr />
             </div>
@@ -206,7 +198,11 @@
             <div>
               <div style='display: flex; justify-content: space-between; align-items: center;'>
                 <span style='font-size: 23px; font-weight: bold;'>Hotel435</span>
-                <i class="fas fa-info-circle" style='font-size: 23px;'></i>
+                <div>
+                  <i class="fas fa-images" style='font-size: 23px; margin: 3px' onclick="openSlideshow('Hotel435')"></i>
+                  <i class="fab fa-github" style='font-size: 23px; margin: 3px'></i>
+                  <i class="fab fa-github" style='font-size: 23px; margin: 3px'></i>
+                </div>
               </div>
               <hr />
             </div>
@@ -217,6 +213,7 @@
               <hr />
               <div class='tech-chips'>
                 <div class='chip'>ReactJS</div>
+                <div class='chip'>Auth0</div>
                 <div class='chip'>.NET Core</div>
                 <div class='chip'>SQL Server</div>
               </div>
@@ -363,6 +360,24 @@
       </div>
     </article>
   </main>
+
+  <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class='slides'>
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption">Hello World!</p>
+    </div>
+  </div>
 </body>
 
 </html>
