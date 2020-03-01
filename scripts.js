@@ -52,7 +52,7 @@ let openSlideshow = name => {
       currentSlide(1);
       break;
     case 'Covershiftz':
-      createSlides(['media/Covershiftz/main.png', 'media/Covershiftz/mapview.png', 'media/Covershiftz/details.png',  'media/Covershiftz/drawer.png', 'media/Covershiftz/search.png', 'media/Covershiftz/settings.png']);
+      createSlides(['media/Covershiftz/main.PNG', 'media/Covershiftz/mapview.PNG', 'media/Covershiftz/details.PNG',  'media/Covershiftz/drawer.PNG', 'media/Covershiftz/search.PNG', 'media/Covershiftz/settings.PNG']);
       captions = [
         'The main screen of the app. Users have the option of signing in using Facebook (OAuth)',
         'The MapView component provided by React Native, where workers can search for jobs within the selected radius (currently limited to 50mi)',
