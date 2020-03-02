@@ -151,55 +151,13 @@
           <div class='card project-content'>
             <div>
               <div style='display: flex; justify-content: space-between; align-items: center;'>
-                <span style='font-size: 23px; font-weight: bold;'>HireUp</span>
-                <i class="fas fa-images" style='font-size: 23px' onclick="openSlideshow('HireUp')"></i>
-              </div>
-              <hr />
-            </div>
-            HireUp is a website that allows businesses and agencies to register and post full-time and part-time job
-            listings
-            for workers to apply. Workers may apply for the job postings through a separate mobile application
-            (Covershiftz) that's available
-            in the play store and app store.
-            <div>
-              <hr />
-              <div class='tech-chips'>
-                <div class='chip'>ReactJS</div>
-                <div class='chip'>Stripe API</div>
-                <div class='chip'>Places API</div>
-              </div>
-            </div>
-          </div>
-          <div class='card project-content'>
-            <div>
-              <div style='display: flex; justify-content: space-between; align-items: center;'>
-                <span style='font-size: 23px; font-weight: bold;'>Covershiftz</span>
-                <i class="fas fa-images" style='font-size: 23px' onclick="openSlideshow('Covershiftz')"></i>
-              </div>
-              <hr />
-            </div>
-            Covershiftz is a mobile app that allows users to apply for nearby shift work. It also serves users who seek
-            to hire applicants who would be interested in shift work. Payment processing, legalities, and all other
-            aspects
-            relevant to the hiring process are taken care of and simplified by this app.
-            <div>
-              <hr />
-              <div class='tech-chips'>
-                <div class='chip'>React Native</div>
-                <div class='chip'>NodeJS</div>
-                <div class='chip'>ExpressJS</div>
-                <div class='chip'>MongoDB</div>
-                <div class='chip'>Google Maps API</div>
-                <div class='chip'>Stripe API</div>
-              </div>
-            </div>
-          </div>
-          <div class='card project-content'>
-            <div>
-              <div style='display: flex; justify-content: space-between; align-items: center;'>
                 <span style='font-size: 23px; font-weight: bold;'>Hotel435</span>
                 <div>
-                  <i class="fas fa-images" style='font-size: 23px; margin: 3px' onclick="openSlideshow('Hotel435')"></i>
+                  <a class='icon-link' href='media/Hotel435/Documentation.pdf' target='_blank'>
+                    <i class="fas fa-file-alt tooltip" style='font-size: 23px; margin: 3px'>
+                      <span class="tooltiptext">Report</span>
+                    </i>
+                  </a>
                   <a class='icon-link' href='https://github.com/mahfuzul-umich/hotel435-administration' target='_blank'>
                     <i class="fab fa-github tooltip" style='font-size: 23px; margin: 3px'>
                       <span class="tooltiptext">Frontend</span>
@@ -224,6 +182,56 @@
                 <div class='chip'>Auth0</div>
                 <div class='chip'>.NET Core</div>
                 <div class='chip'>SQL Server</div>
+              </div>
+            </div>
+          </div>
+          <div class='card project-content'>
+            <div>
+              <div style='display: flex; justify-content: space-between; align-items: center;'>
+                <span style='font-size: 23px; font-weight: bold;'>HireUp</span>
+                <i class="fas fa-images tooltip" style='font-size: 23px' onclick="openSlideshow('HireUp')">
+                  <div class='tooltiptext'>Images</div>
+                </i>
+              </div>
+              <hr />
+            </div>
+            HireUp is a website that allows businesses and agencies to register and post full-time and part-time job
+            listings
+            for workers to apply. Workers may apply for the job postings through a separate mobile application
+            (Covershiftz) that's available
+            in the play store and app store.
+            <div>
+              <hr />
+              <div class='tech-chips'>
+                <div class='chip'>ReactJS</div>
+                <div class='chip'>Stripe API</div>
+                <div class='chip'>Places API</div>
+              </div>
+            </div>
+          </div>
+          <div class='card project-content'>
+            <div>
+              <div style='display: flex; justify-content: space-between; align-items: center;'>
+                <span style='font-size: 23px; font-weight: bold;'>Covershiftz</span>
+                <i class="fas fa-images tooltip" style='font-size: 23px' onclick="openSlideshow('Covershiftz')">
+                  <div class='tooltiptext'>Images</div>
+                </i>
+              </div>
+              <hr />
+            </div>
+            Covershiftz is a mobile app that allows users to apply for nearby shift work. It also serves users who seek
+            to hire applicants who would be interested in shift work. Payment processing, legalities, and all other
+            aspects
+            relevant to the hiring process are taken care of and simplified by this app.
+            <div>
+              <hr />
+              <div class='tech-chips'>
+                <div class='chip'>React Native</div>
+                <div class='chip'>NodeJS</div>
+                <div class='chip'>ExpressJS</div>
+                <div class='chip'>MongoDB</div>
+                <div class='chip'>Google Maps API</div>
+                <div class='chip'>Stripe API</div>
               </div>
             </div>
           </div>
@@ -294,7 +302,8 @@
               </div>
               <hr />
             </div>
-            A website where students will be able to sign up for a specific timeslot to present their fictitious project.
+            A website where students will be able to sign up for a specific timeslot to present their fictitious
+            project.
             <div>
               <hr />
               <div class='tech-chips'>
@@ -370,22 +379,22 @@
   </main>
 
   <!-- The Modal/Lightbox -->
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
 
-    <div class='slides'>
+      <div class='slides'>
+      </div>
+
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption">Hello World!</p>
+      </div>
     </div>
-
-    <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <!-- Caption text -->
-    <div class="caption-container">
-      <p id="caption">Hello World!</p>
-    </div>
-  </div>
 </body>
 
 </html>

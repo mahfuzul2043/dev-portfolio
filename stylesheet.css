@@ -102,7 +102,7 @@ article {
   flex: 1;
 }
 
-.fa-images:hover, .fa-github:hover {
+.fa-images:hover, .fa-github:hover, .fa-file-alt:hover {
   color: grey;
   cursor: pointer;
 }
@@ -295,12 +295,15 @@ img.hover-shadow {
 
 /* Tooltip text */
 .tooltip .tooltiptext {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
   visibility: hidden;
-  width: 120px;
   background-color: black;
   color: #fff;
   text-align: center;
   padding: 5px 0;
+  width: 120px;
   border-radius: 6px;
   bottom: 100%;
   left: 50%;
